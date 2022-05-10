@@ -33,7 +33,7 @@ get '/restaurants/:id' do
 end
 
 post '/restaurants' do
-  # [DEBUG] print the params hash in your view
+  # [DEBUG] line below print the params hash
   # params.to_s
 
   # params is a hash containing
@@ -45,5 +45,6 @@ post '/restaurants' do
   restaurant = Restaurant.new(name: name, cuisine: cuisine, address: address)
   restaurant.save
 
+  # [DEBUG] comment line below if you want to print the params hash
   redirect '/'
 end
