@@ -8,6 +8,13 @@
 <% end %>
 </ul>
 
+<%# form action is the path
+    to the FIRST route that
+    match the request 'verb + path' %>
+<%# In this case
+    post + /restaurants %>
+<%# The input name attribute will be used
+    as key in the params hash %>
 <form action="/restaurants" method="post">
   <label for="name">Name</label>
   <input type="text" name="name" id="name">
